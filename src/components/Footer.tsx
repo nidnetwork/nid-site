@@ -14,7 +14,7 @@ import {
   useColorModeValue
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import { FaInstagram, FaTwitter, FaYoutube, FaDiscord } from "react-icons/fa";
+import { FaEnvelope, FaTwitter, FaGithub, FaDiscord } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import { LogoIcon } from "./LogoIcon";
 
@@ -94,16 +94,19 @@ export default function LargeWithNewsletter() {
               <SocialButton label={"Twitter"} href={"#"}>
                 <FaTwitter />
               </SocialButton>
-              <SocialButton label={"YouTube"} href={"#"}>
-                <FaYoutube />
+              <SocialButton
+                label={"GitHub"}
+                href={"https://github.com/NIDNetwork"}
+              >
+                <FaGithub />
               </SocialButton>
-              <SocialButton label={"Instagram"} href={"#"}>
-                <FaInstagram />
+              <SocialButton label={"Email"} href={"mailto:nidnative@gmail.com"}>
+                <FaEnvelope />
               </SocialButton>
             </Stack>
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
+            <ListHeader>About NID</ListHeader>
             <Link href={"#"}>About us</Link>
             <Link href={"#"}>Blog</Link>
             <Link href={"#"}>Contact us</Link>
